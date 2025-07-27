@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Product Sell</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1585386959984-a4155227c450?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: #000000;
+    }
+    header {
+      background-color: rgba(0, 123, 255, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: rgba(52, 58, 64, 0.9);
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 8px;
+      font-weight: 700;
+    }
+    footer {
+      background-color: rgba(52, 58, 64, 0.9);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: 500;
+      margin-top: 60px;
+    }
+    /* Product gallery styles */
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product-item {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .product-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .product-item img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+    .product-item p {
+      margin: 6px 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #007bff;
+      font-size: 1.1rem;
+    }
+    .desc {
+      font-size: 0.9rem;
+      color: #555;
+      min-height: 40px;
+    }
+    /* Responsive adjustments */
+    @media(max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Online Product Sell</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Online Product Sell</h2>
+    <p>আমাদের মাধ্যমে আপনি ঘরে বসে সকল ধরণের পণ্য সহজেই অর্ডার করতে পারেন। আমরা সবার জন্য বিশ্বস্ত ও দ্রুত পরিষেবা দিয়ে থাকি।</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Online Product Sell একটি আধুনিক অনলাইন প্ল্যাটফর্ম যেখানে সকল ধরণের পণ্য পাওয়া যায়। আমরা ক্রেতার চাহিদা অনুযায়ী পণ্য সরবরাহ করে থাকি।</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>ইলেকট্রনিক্স পণ্য বিক্রয়</li>
+      <li>ঘরের প্রয়োজনীয় জিনিসপত্র</li>
+      <li>বিউটি ও ফ্যাশন পণ্য</li>
+      <li>ডেলিভারি সার্ভিস সারা বাংলাদেশে</li>
+    </ul>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="product-gallery">
+
+      <!-- ৫০টি প্রোডাক্টের ১-১০ নম্বর -->
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61HrN2PRv2L._AC_SL1500_.jpg" alt="Basic Earphone" />
+        <p class="price">৳850</p>
+        <p class="desc">ক্লিয়ার সাউন্ড, 3.5mm জ্যাক</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/71MwVmefBJL._AC_SL1500_.jpg" alt="Wireless Earbuds" />
+        <p class="price">৳950</p>
+        <p class="desc">ব্লুটুথ 5.0, কমপ্যাক্ট ডিজাইন</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/51KH4f4X7mL._AC_SL1000_.jpg" alt="Fast Charger" />
+        <p class="price">৳700</p>
+        <p class="desc">18W ফাস্ট চার্জিং, USB-C পোর্ট</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61aH0MDXtLL._AC_SL1500_.jpg" alt="Portable Sound Box" />
+        <p class="price">৳900</p>
+        <p class="desc">ব্লুটুথ স্পিকার, দীর্ঘ ব্যাটারি লাইফ</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61e9cCE+yIL._AC_SL1500_.jpg" alt="Charging Cable" />
+        <p class="price">৳450</p>
+        <p class="desc">Durable Nylon Braided Cable, 1.2m</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61TJ-LZ8pUL._AC_SL1500_.jpg" alt="Budget Earphone" />
+        <p class="price">৳780</p>
+        <p class="desc">Noise Isolation, Soft Ear Tips</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61WDNPPQFBL._AC_SL1500_.jpg" alt="Quick Charger" />
+        <p class="price">৳900</p>
+        <p class="desc">QC 3.0 Support, Compact Size</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61dYpYj9rVL._AC_SL1500_.jpg" alt="USB Charging Cable" />
+        <p class="price">৳400</p>
+        <p class="desc">Flexible & Durable, 1m লম্বা</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61N1ZElpAFL._AC_SL1500_.jpg" alt="In-ear Earphone" />
+        <p class="price">৳850</p>
+        <p class="desc">Clear Bass, Soft Silicone Tips</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61XJH4KvKRL._AC_SL1500_.jpg" alt="Charging Cable" />
+        <p class="price">৳420</p>
+        <p class="desc">Tangle-Free Design, 1.5m</p>
+      </div>
+
+      <!-- ১১-২০ -->
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f99997b7d4?auto=format&fit=crop&w=600&q=80" alt="Casual T-Shirt" />
+        <p class="price">৳650</p>
+        <p class="desc">কটন মেটেরিয়াল, আরামদায়ক</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Leather Wallet" />
+        <p class="price">৳980</p>
+        <p class="desc">দীর্ঘস্থায়ী লেদার, স্লিম ডিজাইন</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80" alt="Desk Lamp" />
+        <p class="price">৳750</p>
+        <p class="desc">LED লাইট, সহজ নিয়ন্ত্রণ</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Sports Shoes" />
+        <p class="price">৳900</p>
+        <p class="desc">কমফোর্টেবল ফিট, দামী ব্র্যান্ড</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Bluetooth Headphones" />
+        <p class="price">৳999</p>
+        <p class="desc">ব্লুটুথ 5.0, Noise Cancelling</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Coffee Mug" />
+        <p class="price">৳300</p>
+        <p class="desc">সিরামিক, মাইক্রোওয়েভ সেফ</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1539874754764-5a965591d6d7?auto=format&fit=crop&w=600&q=80" alt="Backpack" />
+        <p class="price">৳1200</p>
+        <p class="desc">Waterproof, Spacious compartments</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Sunglasses" />
+        <p class="price">৳850</p>
+        <p class="desc">UV Protection, Stylish Frame</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1565372919423-cf1a3a9eec90?auto=format&fit=crop&w=600&q=80" alt="Smart Watch" />
+        <p class="price">৳1800</p>
+        <p class="desc">Heart Rate Monitor, Waterproof</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80" alt="Wireless Mouse" />
+        <p class="price">৳750</p>
+        <p class="desc">Ergonomic Design, Long Battery Life</p>
+      </div>
+
+      <!-- ২১-৩০ -->
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Bluetooth Speaker" />
+        <p class="price">৳1300</p>
+        <p class="desc">High Quality Sound, Portable</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f99997b7d4?auto=format&fit=crop&w=600&q=80" alt="Jeans Pant" />
+        <p class="price">৳900</p>
+        <p class="desc">Comfortable Fit, Durable Material</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1565372919423-cf1a3a9eec90?auto=format&fit=crop&w=600&q=80" alt="Fitness Tracker" />
+        <p class="price">৳1500</p>
+        <p class="desc">Step Counter, Sleep Monitor</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Water Bottle" />
+        <p class="price">৳400</p>
+        <p class="desc">BPA Free, Leakproof Design</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80" alt="Laptop Stand" />
+        <p class="price">৳1200</p>
+        <p class="desc">Adjustable Height, Lightweight</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Wireless Keyboard" />
+        <p class="price">৳1000</p>
+        <p class="desc">Compact, Rechargeable Battery</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f99997b7d4?auto=format&fit=crop&w=600&q=80" alt="Headphones" />
+        <p class="price">৳1100</p>
+        <p class="desc">Noise Cancelling, Comfortable Fit</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1565372919423-cf1a3a9eec90?auto=format&fit=crop&w=600&q=80" alt="Smartphone Holder" />
+        <p class="price">৳600</p>
+        <p class="desc">Flexible, 360° Rotation</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Travel Backpack" />
+        <p class="price">৳1400</p>
+        <p class="desc">Water Resistant, Multiple Compartments</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80" alt="Office Chair" />
+        <p class="price">৳2000</p>
+        <p class="desc">Ergonomic Design, Adjustable Height</p>
+      </div>
+
+      <!-- ৩১-৫০ -->
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61HrN2PRv2L._AC_SL1500_.jpg" alt="Basic Earphone" />
+        <p class="price">৳850</p>
+        <p class="desc">ক্লিয়ার সাউন্ড, 3.5mm জ্যাক</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/71MwVmefBJL._AC_SL1500_.jpg" alt="Wireless Earbuds" />
+        <p class="price">৳950</p>
+        <p class="desc">ব্লুটুথ 5.0, কমপ্যাক্ট ডিজাইন</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/51KH4f4X7mL._AC_SL1000_.jpg" alt="Fast Charger" />
+        <p class="price">৳700</p>
+        <p class="desc">18W ফাস্ট চার্জিং, USB-C পোর্ট</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61aH0MDXtLL._AC_SL1500_.jpg" alt="Portable Sound Box" />
+        <p class="price">৳900</p>
+        <p class="desc">ব্লুটুথ স্পিকার, দীর্ঘ ব্যাটারি লাইফ</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61e9cCE+yIL._AC_SL1500_.jpg" alt="Charging Cable" />
+        <p class="price">৳450</p>
+        <p class="desc">Durable Nylon Braided Cable, 1.2m</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61TJ-LZ8pUL._AC_SL1500_.jpg" alt="Budget Earphone" />
+        <p class="price">৳780</p>
+        <p class="desc">Noise Isolation, Soft Ear Tips</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61WDNPPQFBL._AC_SL1500_.jpg" alt="Quick Charger" />
+        <p class="price">৳900</p>
+        <p class="desc">QC 3.0 Support, Compact Size</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61dYpYj9rVL._AC_SL1500_.jpg" alt="USB Charging Cable" />
+        <p class="price">৳400</p>
+        <p class="desc">Flexible & Durable, 1m লম্বা</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61N1ZElpAFL._AC_SL1500_.jpg" alt="In-ear Earphone" />
+        <p class="price">৳850</p>
+        <p class="desc">Clear Bass, Soft Silicone Tips</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61XJH4KvKRL._AC_SL1500_.jpg" alt="Charging Cable" />
+        <p class="price">৳420</p>
+        <p class="desc">Tangle-Free Design, 1.5m</p>
+      </div>
+
+    </div>
+
+    <a href="https://wa.me/8801865582962" target="_blank" style="display:inline-block; margin-top:25px; padding:12px 25px; background:#25D366; color:#fff; font-weight:700; border-radius:8px; text-decoration:none;">WhatsApp এ অর্ডার করুন</a>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>ঠিকানা: Nilphamari sadar, Nilphamari</p>
+    <p>মোবাইল: 01865582962, 01825977007</p>
+    <p>ইমেইল: mdraiyan5280@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Online Product Sell. সর্বস্বত্ব সংরক্ষিত।</p>
+  </footer>
+
+</body>
+</html>
